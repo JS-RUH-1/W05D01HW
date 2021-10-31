@@ -5,7 +5,6 @@ export default function Login(props) {
     function login(e) {
         e.preventDefault();
         props.setLogedIn(true)
-        
     }
 
     return (
