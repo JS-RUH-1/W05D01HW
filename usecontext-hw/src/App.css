@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.App {
+  text-align: center;
+}
+
+.formdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  height: 400px;
+  width: 300px;
+}
+.LinkCss {
+  text-decoration: none;
+  color: White;
+}
+.LinkCss:hover {
+  text-decoration: none;
+  color: White;
+}
