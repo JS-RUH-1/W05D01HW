@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.Link{
+  color:white;
+  text-decoration: none;
+}
+#Nav{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+#navbar{
+position: -webkit-sticky;
+position: sticky;
+top: 0px;
+}
+#false_log,#true_log{
+  border-radius: 20%;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+#false_log{
+  color: white;
+  background: red;
+}
+#true_log{
+  color: green;
+  background: rgb(207, 255, 202);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#cards_parent{
+  position:static;
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  gap: 3vw;
+
+}
+.card {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+.card_title{
+  color: black;
+}
+.welcoming_phrase{
+  color: greenyellow;
+}
+
+#nav_home{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
