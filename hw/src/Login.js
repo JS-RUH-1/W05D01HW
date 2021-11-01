@@ -8,7 +8,7 @@ export default function Login(props) {
     }
 
     return (
-        <div>
+        <div className='login-div'>
             <form onSubmit={(e)=> login(e)}>  
                 <div className="container">   
                     <label>Username : </label>   
