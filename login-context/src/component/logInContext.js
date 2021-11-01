@@ -1,4 +1,4 @@
 import { createContext } from "react";
 
-const logInContext = createContext("Login");
+const logInContext = createContext(false);
 export default logInContext;

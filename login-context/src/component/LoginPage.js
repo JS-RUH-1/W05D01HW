@@ -5,23 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import logInContext from "./logInContext";
 import Home from "./Home";
-// import NavBar from "./NavBar";
+import { useContext } from "react";
+import NavBar from "./NavBar";
 // import LogOutPage from "./LogOutPage";
 
 function LoginPage() {
-  let [logIn, setLogIn] = useState(false);
-
-  //   function changeState() {
-  //     if (logIn == false) {
-  //       setLogIn(true);
-
-  //       <logInContext.Provider value={{ logInContext: logIn }}>
-  //         <NavBar></NavBar>
-  //       </logInContext.Provider>;
-  //     }
-  //     console.log(logIn);
-  //   }
-
+  //   let [logIn, setLogIn] = useState(false);
+  //   let { logIn, setLogIn } = useContext(logInContext);
+  let value = useContext(logInContext);
+  console.log(value.logInContext);
   return (
     <div>
       <Form>
@@ -38,15 +30,17 @@ function LoginPage() {
         <Button
           variant="primary"
           type="submit"
-          onClick={() => {
-            if (logIn == false) {
-              setLogIn(true);
-
-              <logInContext.Provider value={{ logInContext: logIn }}>
-                <Home></Home>
-              </logInContext.Provider>;
-              console.log(logIn);
+          onClick={(e) => {
+            if (value.logInContext == false) {
+              console.log("hh");
+              value.setLogIn(true);
+            } else if (value.logInContext == true) {
+              value.setLogIn(false);
+              console.log("hhgg");
             }
+
+            console.log(value.logInContext);
+            e.preventDefault();
           }}
         >
           Login
